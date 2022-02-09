@@ -1,0 +1,17 @@
+<!DOTCTYPE html>
+<html>
+  <head>
+    <script>
+      const wireUpMessage = () => {
+        document.getElementsByClassName("coffee-button")[0].addEventListener('click', () => alert('Good!'));
+        document.getElementsByClassName("suggestion-button")[0].addEventListener('click', () => alert('We\'ll take that into consideration!'));
+
+      }
+      window.addEventListener('DOMContentLoaded', wireUpMessage);
+    </script>
+  </head>
+  <body>
+    <button class="coffee-button" onclick="() => alert('Good!')">I'm making coffee</button>
+    <button class="suggestion-button" onclick="() => alert('Good!')">I have a suggestion</button>
+  </body>
+</html>
